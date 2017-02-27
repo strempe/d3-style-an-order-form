@@ -1,18 +1,24 @@
+/**{
+    box-sizing: border-box;
+}*/
 html {
     font-family: sans-serif;
     line-height: 1.15;
     background-attachment: scroll;
-
 }
-body {
-    padding: 60px;
-    background: #f5f5f5;
-    /*margin: auto;*/
-    max-width: 400px; 
-    margin-top: 50%;
-    margin-bottom: 50%;
-    background-image: css/Header_IMG_Cactus;
-    /*text-align: center;*/
+
+header {
+    padding: 30px;
+}
+
+body{
+    background-image: url("../img/header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background: #f5f5f5;this is short hand and needs to be at th top, else it cancles out everything*/ 
+    margin: auto;
 }
 
 .card {
@@ -20,14 +26,15 @@ body {
     padding: 20px 20px 20px 20px;  
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     background-color: #ffffff;
-    margin: auto 0;
-    border-radius: 10px;
-        
+    margin: 200px auto; 
+    /* 0 > up and down, auto > left right*/
+    border-radius: 10px; 
+    max-width: 400px;      
+
 }
 
 .h1 {
     text-align: center;
     color: darkslategray;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }

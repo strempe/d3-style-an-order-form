@@ -5,16 +5,12 @@
     <meta name="description" content="Cactus Delivery"/>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.global.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
 
 </head>
 
 <body>
-    <header>
-            <img width="1200" src="img/Header_IMG_Cactus.jpg"/>
-    </header>
-
     <div class="card">        
         <form action="https://formspree.io/88.trempe.sara@gmail.com" method="post">    
             <input type="hidden" name="_next" value="https://strempe.github.io/d3-style-an-order-form/thanks.html"/>
@@ -36,46 +32,36 @@
             </select> 
         </div>
 
-        <div class="field">
+        <div class="field choices">
         <label>Select your planter color:</label>
-            <label class="label-wrap">
-                <input type="radio" name="color" value="white">
-                Studio White
-            </label>
-            <label class:"label-wrap">
-                <input type="radio" name="color" value="grey">
-                Ash Grey
-            </label>
-            <label class:"label-wrap">
-                <input type="radio" name="color" value="charcoal">
-                Charcoal
-            </label>
-            <label class="label-wrap">
-                <input type="radio" name="color" value="black">
-                Key Black 
-            </label>
-                
+            <label for="white"><input type="radio" name="color" id="white" value="white"> Studio White</label>
+                    
+            <label for="grey"><input type="radio" name="color" id="grey" value="grey"> Ash Grey</label>
+                         
+            <label for="charcoal"><input type="radio" name="color" id="charcoal" value="charcoal"> Charcoal</label>
+                                     
+            <label for="black"><input type="radio" name="color" id="black" value="black"> Key Noir</label>              
         </div>
         
         <div class="field">
-            <label for="first name">Full Name:</label>
-                <input type="text" id="first name" name="first name" placeholder="first"/>
+            <label>Full Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="first"/>
                 <br/>
-                <input type="text" id="last name" name="last name" placeholder="last"/>
-                
+                <input type="text" id="lastName" name="lastName" placeholder="last"/>     
         </div>
 
         <div class="field">
-            <label for="contact">Email:</label>
-                <input type="email" id="email" name="email" placeholder=" .com"/>
-                
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder=" .com"/>       
         </div>
-        <div class="field">
-            <label for="contact">Phone Number:</label>
-                <input type="tel" id="phone" name"phone" placeholder="(  )"/>
 
         <div class="field">
-            <label for="address">Shipping Address:</label>
+            <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(  )"/>
+        </div>
+
+        <div class="field">
+            <label>Shipping Address:</label>
                 
                 <input type="text" id="street" name="street" placeholder="street"/><br/>
                 <input type="text" id="city" name="city" placeholder="city"/><br/>
@@ -84,27 +70,24 @@
         </div>
 
         <div class="field">
-                <label for="comment">Shipping Instructions:</label>
-                    <textarea name="comment"></textarea>
+                <label>Shipping Instructions:</label>
+                <textarea name="comment"></textarea>
         </div>
 
         <div class="field">
             <label for="number">What's your favorite number?</label>
-                <input type="number" id="number" name="number"/>
+            <input type="number" id="number" name="number"/>
         </div>
          
-        <div class="field">
-            <label for="news letter">
-                <input type="checkbox" checked> Please send me awesome newsletters!
-                </label>
+        <div class="field newsletter">
+            <input type="checkbox" checked> Please send me awesome newsletters!       
         </div>
 
-       <div class="field field-centered">
+        <div class="field field-centered">
             <button type="submit">Send</button>
         </div>
         
         </form>
     </div>
-
 </body>
 </html>
